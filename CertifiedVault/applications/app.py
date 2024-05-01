@@ -23,13 +23,11 @@ company_logo = Image.open("../assets/company_logo.jpg")
 with col2:
     st.image(company_logo, output_format="jpg", width=230)
     clicked_verifier = st.button("Verifier")
-
-if 'profile' not in st.session_state:
-    st.session_state = 'null'
              
 if clicked_institute:
     st.session_state.profile = "Institute"
     switch_page('login')
+
 elif clicked_verifier:
     st.session_state.profile = "Verifier"
     switch_page('login')
