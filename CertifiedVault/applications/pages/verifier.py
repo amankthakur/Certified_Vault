@@ -6,10 +6,10 @@ from utils.streamlit_utils import view_certificate
 from connection import contract
 from utils.streamlit_utils import displayPDF, hide_icons, hide_sidebar, remove_whitespaces
 
-st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
-hide_icons()
-hide_sidebar()
-remove_whitespaces()
+# st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
+# hide_icons()
+# hide_sidebar()
+# remove_whitespaces()
 
 
 options = ("Verify Certificate using PDF", "View/Verify Certificate using Certificate ID")
